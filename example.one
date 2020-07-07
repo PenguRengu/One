@@ -1,0 +1,22 @@
+(program Example (do
+// global vars
+((int) global-var num1 (empty))
+((int) global-var num2 (empty))
+
+// functions
+(func combine-vars (str) op -> (int) (do
+((int) var answer (empty))
+(if (= (@ op) "+") (alter answer (+ ($ num1) ($ num2))))
+(if (= (@ op) "-") (alter answer (- ($ num1) ($ num2))))
+(if (= (@ op) "*") (alter answer (* ($ num1) ($ num2))))
+(if (= (@ op) "/") (alter answer (/ ($ num1) ($ num2))))
+(return ($ answer))))
+
+//main
+(main args (do
+(alter num1 (to-int (read-input)))
+(alter num2 (to-int (read-input)))
+((str) let op (read-input))
+((int) let answer (call-> combine-vars (@ op)))
+(println answer)
+))))
