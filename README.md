@@ -1,15 +1,9 @@
 # Get started
 ## Running a program
-First input the programming language to convert to (`java` or `clj`).<br>
-Then input the file to convert.
 ```
 $ java -jar one.jar
-language?
-java
-file?
-example.one
-converting...
-output file: output.java
+>
+example.one java
 ```
 ## Programs
 ```
@@ -18,14 +12,46 @@ output file: output.java
 // Main function
 (main args more code...)
 ```
-## Printing
+## Printing and input
 ```
-// prints "hi" to the console with a newline
+// Prints "hi" to the console with a newline
 (println "hi")
-// prints "hi" to the console without a newline
+// Prints "hi" to the console without a newline
 (print "hi")
+// Reads user input
+(read-input)
 ```
 ## Variables and constants
 ```
-((int) var test 123) // Creates an variable called test with a type of an integer and a value of 123
+// Creates a local variable
+((int) var var-test 123)
+// Creates a local constant
+((int) let let-test 321)
+// Creates a global variable
+((int) global-var global-var-test 234)
+// Creates a global constant
+((int) global-let global-let-test 432)
+// Accesses a variable
+($ var-name)
+// Accesses a constant or function argument
+(@ const-name)
+```
+## Types
+```
+// No return value
+(void)
+// Nothing
+(empty)
+// String
+(str)
+// Integer
+(int)
+// Double
+(double)
+// Boolean
+(bool)
+// Closure
+(closure)
+// Any type
+(object)
 ```
