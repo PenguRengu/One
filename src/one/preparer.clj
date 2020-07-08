@@ -1,4 +1,5 @@
 (ns one.preparer
+  (:gen-class)
   (:require [clojure.string :as cstr]
             [camel-snake-kebab.core :as csk]))
 

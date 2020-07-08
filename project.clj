@@ -7,4 +7,4 @@
                  [camel-snake-kebab "0.4.1"]]
   :repl-options {:init-ns one.core}
   :main one.core
-  :aot [one.core])
+  :aot [one.core one.preparer])
