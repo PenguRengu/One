@@ -15,36 +15,36 @@ example.one java
 ## Printing and input
 #### Printing
 ```
-// Prints "hi" to the console with a newline
+// Print "hi" to the console with a newline
 (println "hi")
-// Prints "hi" to the console without a newline
+// Print "hi" to the console without a newline
 (print "hi")
 ```
 #### Input
 ```
-// Reads user input
+// Read user input
 (read-input)
 ```
 ## Variables and constants
 #### Variables
 ```
-// Creates a local variable
+// Create a local variable
 ((int) var var-test 123)
-// Creates a global variable
+// Create a global variable
 ((int) global-var global-var-test 234)
 ```
 #### Constants
 ```
-// Creates a local constant
+// Create a local constant
 ((int) let let-test 321)
-// Creates a global constant
+// Create a global constant
 ((int) global-let global-let-test 432)
 ```
 #### Accessing variables and constants
 ```
-// Accesses a variable
+// Access a variable
 ($ var-name)
-// Accesses a constant or function argument
+// Access a constant or function argument
 (@ const-name)
 ```
 ## Types
@@ -77,4 +77,27 @@ example.one java
 (to-double 321)
 // Convert to boolean
 (to-bool 0)
+```
+## Math
+```
+// Add
+(+ 1 1)
+// Subtract
+(- 2 1)
+// Multiply
+(* 3 2)
+// Divide
+(/ 6 3)
+// Square root
+(sqrt 64)
+// Sine
+(sin 3)
+// Cosine
+(cos 3)
+// Tangent
+(tan 3)
+// Absolute value
+(abs -3)
+// Random integer
+(rand-int 10)
 ```
