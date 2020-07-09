@@ -131,7 +131,3 @@ example.one java
 // Less then than or equal to
 (<= 1 2)
 ```
-## Control
-```
-// If
-```
