@@ -57,11 +57,15 @@ _ph=1
            "concat _ph=0 _ph=1" "(_ph=0 + _ph=1)"
            ;; Boolean
            "== _ph=0 _ph=1" "(_ph=0 == _ph=1)"
+           "!= _ph=0 _ph=1" "(_ph=0 != _ph=1)"
            "= _ph=0 _ph=1" "_ph=0.equals(_ph=1)"
            "> _ph=0 _ph=1" "(_ph=0 > _ph=1)"
            "< _ph=0 _ph=1" "(_ph=0 < _ph=1)"
            ">= _ph=0 _ph=1" "(_ph=0 >= _ph=1)"
            "<= _ph=0 _ph=1" "(_ph=0 <= _ph=1)"
+           "and _ph=0 _ph=1" "(_ph=0 && _ph=1)"
+           "or _ph=0 _ph=1" "(_ph=0 || _ph=1)"
+           "not _ph=0 " "!_ph=0"
            ;; Control
            "if _ph=0 _ph=1" "if (_ph=0) {\n_ph=1}\n"
            "if _ph=0 _ph=1 else _ph=2" "if (_ph=0) {\n_ph=1} else {\n_ph=2}\n"
