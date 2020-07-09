@@ -101,3 +101,37 @@ example.one java
 // Random integer
 (rand-int 10)
 ```
+## String
+```
+// Length of a string
+(strlen "hello")
+// Substring
+(substr "hello" 1 3)
+// Split string
+(split "1,2" ",")
+// Split string by lines
+(split-lines "1\n2")
+// Trim string
+(trim "%_%_%_%_%_%_%_%_hello%_%_%_%_%_%_%_%_%_%_")
+// Concatenate string
+(concat "1" "2")
+```
+## Boolean
+```
+// Equals
+(== 1 1)
+// Equals object
+(= "1" "1")
+// Greater than
+(> 2 1)
+// Less than
+(< 1 2)
+// Greater than or equal to
+(>= 2 1)
+// Less then than or equal to
+(<= 1 2)
+```
+## Control
+```
+// If
+```
